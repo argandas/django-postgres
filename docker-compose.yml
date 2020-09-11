@@ -10,7 +10,7 @@ services:
     web:
         build: .
         command: python manage.py runserver 0.0.0.0:8000
-        image: custom-python
+        image: django-postgres
         volumes: 
             - .:/code
         ports:
